@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #66ccff;
+}
+
+.right {
+  right: 0;
+  background-color:  #404040;
+
+}
+
+.centered {
+
+	font-size:300%;
+	width: 80%;
+	font-family: 'ABeeZee';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.drop{
+	font-family: 'ABeeZee';
+	font-size:300%;
+}
+.city{
+	font-size:20px;
+	width: 250px;
+}
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.button{
+		font-size:20px;
+		width: 250px;
+		position: absolute;
+		margin-top:550px;
+		margin-left: 430px; 
+}
+</style>
+</head>
+<body>
+<div class="whole">
+<div class="split left">
+ <form  method = "POST" action ="/temp">
+  <div class="centered">
+    <p class = "title">&nbsp&nbsp CHOOSE BASE COUNTRY</p>
+          	 <div class="drop">
+           	 	<select class="city" name="city">
+	             <option value="USD">AMERICA</option>
+				  <option value="EUR">EUROPE</option>
+				  <option value="BRL">BRAZIL</option>
+				  <option value="MXN">MEXICO</option><br><br> 
+				</select>
+  			</div>
+		</div>
+	</div>
+	<div class="split right">
+  		<div class="centered">
+    		<p class = "title">&nbsp&nbsp CHOOSE TO<br> &nbsp&nbsp&nbsp&nbspCOUNTRY</p>
+    			<div class="drop">
+            		<select class="city" name="city2">
+		              <option value="USD">AMERICA</option>
+					  <option value="EUR">EUROPE</option>
+					  <option value="BRL">BRAZIL</option>
+					  <option value="MXN">MEXICO</option><br><br>
+				  </select>
+			</div>
+  		</div>
+	</div>
+	<input class="button" type="submit" name="CONVERT" value="submit">
+	</form>
+  </div>
+</body>
+</html> 
